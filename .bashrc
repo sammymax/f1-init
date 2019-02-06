@@ -9,9 +9,10 @@ fi
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-export AWS_FPGA_REPO_DIR=~/aws-fpga
+# by default the repo dir is ~/src/project-data/aws-fpga, this is fine
+# export AWS_FPGA_REPO_DIR=~/aws-fpga
 source $AWS_FPGA_REPO_DIR/hdk_setup.sh
-export EMAIL=pohsnu12@mit.edu
+export EMAIL=<email here>
 $AWS_FPGA_REPO_DIR/shared/bin/scripts/notify_via_sns.py
 source $XILINX_SDX/settings64.sh
 
